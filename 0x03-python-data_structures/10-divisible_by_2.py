@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-delete_at = __import__('11-delete_at').delete_at
-
-my_list = [1, 2, 3, 4, 5]
-idx = 3
-new_list = delete_at(my_list, idx)
-print(new_list)
-print(my_list)
+def divisible_by_2(my_list=[]):
+    new_list = []
+    for i in range(len(my_list)):
+        if my_list[i] % 2 == 0:
+            new_list.append(True)
+        else:
+            new_list.append(False)
+    return new_list
